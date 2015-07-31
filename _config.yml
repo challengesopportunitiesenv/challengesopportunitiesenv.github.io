@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Challenges and Opportunities for Governance of Socio-Ecological Systems in Comparative Perspective
+tagline:             "April 20-22 2016"
+description:         'Workshop in Waterloo ON Canada in April 2016'
+url:                 www.challengesopportunitiesenv.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              BSIA Workshop 2016
+  url:               
+  email:             john.mclevey@uwaterloo.ca
+
+# Custom vars
+version:             
