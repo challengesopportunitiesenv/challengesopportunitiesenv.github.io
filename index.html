@@ -1,32 +1,20 @@
 ---
 layout: default
-title: Home
 ---
 
-<p>The purpose of this workshop is to bring together experts on environmental governance, socio-ecological systems, and social networks. Our primary objectives are to identify new connections between these fields, promote international comparative approaches, and facilitate new collaborative relationships.</p>
+<div class="home">
 
-<!-- <h2>Co-Organizers</h2> -->
+  <h1>Posts</h1>
 
-<p>More information will be posted to this website in the coming weeks. </p>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-<p>July 31, 2015</p>
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
-<p>John McLevey, University of Waterloo, <a href="mailto:john.mclevey@uwaterloo.ca">john.mclevey@uwaterloo.ca</a><br>    
-Vanessa Schweizer, University of Waterloo, <a href="mailto:vanessa.schweizer@uwaterloo.ca">vanessa.schweizer@uwaterloo.ca</a><br>  
-Mark Stoddart, Memorial University, <a href="mailto:mstoddart@mun.ca">mstoddart@mun.ca</a></p>  
-
-<!-- 
-
-<h2>Funding</h2>
-
-
-<p>This workshop is supported by a Major Workshops Grant from the <a href="https://www.balsillieschool.ca/about">Balsillie School of International Affairs</a>, with additional support the <a href="https://uwaterloo.ca/environment/">Faculty of Environment at the University of Waterloo</a>, the <a href="https://uwaterloo.ca/knowledge-integration/node/1">Department of Knowledge Integration</a> at the University of Waterloo, and the <a href="http://wici.ca/">Waterloo Institute for Complexity and Innovation</a>.</p> 
-
-<h2>Registration</h2>
-
-<h2>Public Panel</h2>
-
-
-<p><em>Powered by <a href="http://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/poole/lanyon">Lanyon</a></em>.</p>
-
--->
+</div>
